@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Customizable Planner</title>
+<title>Student Customization</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -12,15 +12,17 @@
 <body>
 
 <div class="jumbotron text-center"style="background-color: #00ffff;">
-  <h1>Student Customizable Planner </h1>
+  <h1>Student Customization  </h1>
   <p>Complete the questions below if you answered student on the previous page.</p> 
 </div>
   
-<form action="/action_page.php">
-  <div class="form-group">
-    <label for="q2">Name:</label>
-    <input type="name" class="form-control" placeholder="Enter first name" id="q2">
+<form action="student.php" method="get">
+  Name: <input type="text" name="name">
+   <!-- <div class="form-group">
+    <label for="Name">Name:</label>
+    <input type="Name" class="form-control" placeholder="first name" id="name">
   </div>
+  
   <div class="form-group">
     <label for="Pick">Pick two categories out of these:(Sports, Beauty, Politics, Movies)</label>
     <input type="pick" class="form-control" placeholder="Sports, Beauty, Politics, Movies" id="pick">
@@ -45,7 +47,9 @@
       <label for="fav">What's one of your favorite colors?</label>
       <input type="fav" class="form-control" placeholder="Enter color" id="fav">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  -->
+  <input type="submit"> 
   </form>
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Customizable Planner</title>
+<title>Worker Customization</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -12,19 +12,21 @@
 <body>
 
 <div class="jumbotron text-center"style="background-color: #00ffff;">
-  <h1>Worker Customizable Planner </h1>
+  <h1>Worker Customization </h1>
   <p>Complete the questions below if you answered everyday worker on the previous page.</p> 
 </div>
-  
+ 
 <form action="/action_page.php">
   <div class="form-group">
-    <label for="q2">Name:</label>
-    <input type="name" class="form-control" placeholder="Enter first name" id="q2">
+    <label for="Name">Name:</label>
+    <input type="Name" class="form-control" placeholder="first name" id="name">
   </div>
   <div class="form-group">
-    <label for="Pick">Pick two categories out of these:(Sports, Beauty, Politics, Movies)</label>
+    <label for="Pick">Pick a category out of these:(Sports, Beauty, Politics, Movies)</label>
     <input type="pick" class="form-control" placeholder="Sports, Beauty, Politics, Movies" id="pick">
   </div>
+  <button type ="button" onclick ="quotes()">Monthly Quote</button>
+ 
     <div class="form-group">
       <label for="w1">How many jobs do you have?  </label>
       <input type="w1" class="form-control" placeholder="Enter number of jobs" id="w1">
@@ -53,6 +55,7 @@
       <label for="fav">What's one of your favorite colors?</label>
       <input type="fav" class="form-control" placeholder="Enter color" id="fav">
     </div>
+ 
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
