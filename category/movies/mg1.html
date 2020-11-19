@@ -24,7 +24,8 @@
     tr:nth-child(even) {
       background-color: #dddddd;
     }
-    /* Include the padding and border in an element's total width and height */
+
+/* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
 }
@@ -143,21 +144,23 @@ input {
 </head>
 <body>
 
-<div class="jumbotron text-center"style="background-color: #00ffff;">
-  <h1>Student Customization  </h1>
-  <p>Take this survey below to populate a planner that adapts to your needs.</p> 
-</div>
 
-<div class= "text-center">
-  <h2>Quote of the month</h2>
-  <p>Fashion is not something that exists in dresses only. <br> 
-    Fashion is in the sky, in the street, fashion has to do with ideas,<br> 
-    the way we live, what is happening.<br>
-    – CoCo Chanel</p>
-</div>
+  <div class="jumbotron text-center"style="background-color: #00ffff;">
+    <h1>Student Customization  </h1>
+    <p>Take this survey below to populate a planner that adapts to your needs.</p> 
+  </div>
+  <div class="jumbotron text-center"style="background-color: white;">
+    <h1>Monthly Calendar </h1>
+    <iframe src="https://calendar.google.com/calendar/embed?height=750&amp;wkst=1&amp;bgcolor=%2300ffff&amp;ctz=America%2FNew_York&amp;src=Y191aDloMnU1bGM2bjZpbHVrZzNndWJwdTBwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23E67C73&amp;color=%230B8043" style="border:solid 1px #777" width="1000" height="750" frameborder="0" scrolling="no"></iframe>
+  </div>
+  
+  <div class= "text-center">
+    <h2>Quote of the month</h2>
+    <p>“Wakanda forever!” <br>– T’Challa (Chadwick Boseman)</p>
+  </div>
   
     <div class="classes">
-      <h2>Class 1 To-do List</h2>
+      <h2 style="margin:5px">Class 1 To-do List</h2>
 
       <table>
         <tr>
@@ -186,7 +189,7 @@ input {
     </div>
     <div>
       <div id="myDIV" class="header">
-        <h2 style="margin:5px">Monthly Goals</h2>
+        <h2 style="margin:5px">Weekly Goals/Daily Challenges</h2>
         <input type="text" id="myInput" placeholder="Title...">
         <span onclick="newElement()" class="addBtn">Add</span>
       </div>
@@ -259,7 +262,8 @@ input {
       }
    
   </script>
- 
+   
+
 
 </body>
 </html>
